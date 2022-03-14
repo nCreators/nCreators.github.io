@@ -1,3 +1,16 @@
 img.usericon {
-  border-radius: 50%
+  border-radius: 50%;
+}
+ul.biglist li {
+  display: block;
+  font-size: 32px;
+  position: relative;
+}
+ul.biglist li:before {
+  display: inline;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
 }
