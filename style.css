@@ -15,10 +15,19 @@ ul.biglist li:before, ul.biglist li:marker, ul.biglist li p, ul.biglist li p a, 
   margin: auto;
   width: 95%;
 }
+body {
+  margin: 0px;
+}
 header {
-  postion: -webkit-sticky;
   position: sticky;
   top: 0;
+  background-color: lightgray;
+}
+h1, h2, h3, h4, h5, h6 {
+  display: inline;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: cornflowerblue;
 }
 /* ライターページ */
 table {
