@@ -26,6 +26,7 @@ header {
 h1, h2, h3, h4, h5, h6 {
   width: fit-content;
   height: fit-content;
+  margin: 0px;
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: cornflowerblue;
