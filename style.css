@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-width: 2px;
   border-bottom-color: cornflowerblue;
 }
-ol, ul {
+ol.breadcrumb {
   margin: 0px;
 }
 .breadcrumb li {
