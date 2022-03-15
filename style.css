@@ -34,6 +34,8 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: cornflowerblue;
+  font-size: 1.5rem;
+  margin-left: 8px;
 }
 ol.breadcrumb {
   padding-left: 2%;
