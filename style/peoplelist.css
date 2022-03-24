@@ -1,0 +1,17 @@
+img.usericon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+ul.biglist li {
+  height: 64px;
+  position: relative;
+  font-size: 32px;
+}
+ul.biglist li:before, ul.biglist li:marker, ul.biglist li p, ul.biglist li p a, ul.biglist li p a img, ul.biglist li p a span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 95%;
+}
