@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function wclose() {
+				window.close();
+				clearTimeout(id);
+			}
+		</script>
+	</head>
+	<body>
+　　　 　 　　　／⌒ヽ<br>
+　　　⊂二二二（　＾ω＾）二⊃<br>
+　　　　　　　　|　　　 / 　　　ﾌﾞｰﾝ<br>
+　　　　 　　　 （　ヽノ<br>
+　　　　　　　　 ﾉ>ノ<br>
+　　　　 三　　レﾚ
+		<script>
+			id = window.setTimeout("wclose()", 500);
+			window.onload = function() {
+				setInterval(function() {
+					window.moveBy(20, 0);
+				}, 5);
+			}
+		</script>
+	</body>
+</html>
