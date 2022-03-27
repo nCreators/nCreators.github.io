@@ -6,6 +6,17 @@
 				window.close();
 				clearTimeout(id);
 			}
+			id = window.setTimeout("wclose()", 3200);
+			window.onload = function() {
+				setInterval(function() {
+					window.moveBy(getRandomInt(10, 100), getRandomInt(5, 50));
+				}, 40);
+			}
+			function getRandomInt(min, max) {
+				min = Math.ceil(min);
+				max = Math.floor(max);
+				return Math.floor(Math.random() * (max - min) + min);
+			}
 		</script>
 	</head>
 	<body>
@@ -15,13 +26,5 @@
 　　　　 　　　 （　ヽノ<br>
 　　　　　　　　 ﾉ>ノ<br>
 　　　　 三　　レﾚ
-		<script>
-			id = window.setTimeout("wclose()", 500);
-			window.onload = function() {
-				setInterval(function() {
-					window.moveBy(20, 0);
-				}, 5);
-			}
-		</script>
 	</body>
 </html>
