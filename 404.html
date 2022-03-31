@@ -63,9 +63,17 @@ permalink: /404.html
 				<br>
 			</button>
 			<script>
+				function syncDelay(milliseconds){
+					var start = new Date().getTime();
+					var end=0;
+					while( (end-start) < milliseconds){
+						end = new Date().getTime();
+					}
+				}
 				function boonHiraku() {
-					for (let i = 1; i < 5; i++) {
+					for (let i = 0; i < 100; i++) {
 						window.open('https://ncreators.github.io/src/html/boon.html', i + 'boon', 'width=450,height=250,resizable=no');
+						syncDelay(600);
 					}
 				}
 			</script>
