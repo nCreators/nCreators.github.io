@@ -27,6 +27,10 @@ p {
   font-size: 110%;
   line-height: 135%;
 }
+a {
+  width: fit-content;
+  height: fit-content;
+}
 /* 基礎要素ここまで */
 /* パンくずリスト */
 ol.breadcrumb {

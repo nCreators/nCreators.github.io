@@ -6,10 +6,10 @@
 				window.close();
 				clearTimeout(id);
 			}
-			id = window.setTimeout("wclose()", 1000);
+			id = window.setTimeout("wclose()", 100000);
 			window.onload = function() {
 				setInterval(function() {
-					window.moveBy(getRandomInt(10, 15), getRandomInt(5, 7));
+					window.moveBy(getRandomInt(-100, 105), getRandomInt(-50, 52));
 				},10);
 			}
 			function getRandomInt(min, max) {
