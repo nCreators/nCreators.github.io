@@ -4,6 +4,7 @@ body {
 }
 header {
   position: sticky;
+  z-index: 100;
   top: 0;
   background-color: lightgray;
 }
@@ -25,6 +26,10 @@ p {
   margin: 5px;
   font-size: 110%;
   line-height: 135%;
+}
+a {
+  width: fit-content;
+  height: fit-content;
 }
 /* 基礎要素ここまで */
 /* パンくずリスト */
