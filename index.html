@@ -29,6 +29,7 @@
 		<link rel="stylesheet" href="style/general/main.css" />
 		<title>nCreateホーム｜nCreateの有志者で作り上げるウェブサイト</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0" />
+		<script src="src/javascript/news-sizer.js" defer></script>
 	</head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->
@@ -40,21 +41,31 @@
 			<h1>ヘッダ</h1>
 		</header>
 		<div class="body">
-			<h1>nCreateのウェブサイト</h1>
-			<p>このサイトは、Discordの“nCreateのクリエイターサーバー”のウェブサイト開発の有志者で作り上げるウェブサイトです。ウェブサイト開発の情報共有やなど、効率化を図るとともに一種のコミュニティを作り上げることを目的としています。</p>
-			<p>知人の方でウェブサイト作成に興味がある方は<a href="https://discord.gg/KmPamQnese">こちら</a>の“nCreateのクリエイターサーバー”にお越しください！</p>
-			<h2>サイト内リンク</h2>
-			<ul>
-				<li>
-					<p><a href="article">記事</a></p>
-				</li>
-				<li>
-					<p><a href="webapp">JSアプリの開発(試験的)</a></p>
-				</li>
-				<li>
-					<p><a href="writer">ライター</a></p>
-				</li>
-			</ul>
+			<div class="content">
+				<h1>nCreateのウェブサイト</h1>
+				<p>このサイトは、Discordの“nCreateのクリエイターサーバー”のウェブサイト開発の有志者で作り上げるウェブサイトです。ウェブサイト開発の情報共有やなど、効率化を図るとともに一種のコミュニティを作り上げることを目的としています。</p>
+				<p>知人の方でウェブサイト作成に興味がある方は<a href="https://discord.gg/KmPamQnese">こちら</a>の“nCreateのクリエイターサーバー”にお越しください！</p>
+			</div>
+			<div class="right-bar">
+				<iframe id="news" src="news.html" scrolling="no">
+					<p>読み込み中</p>
+					<img alt="Loading…" src="src/img/gif/loading-small-content.gif">
+					<p>いつまでも読み込まれない場合はページを再読み込みしてください。それでも治らない場合お使いのブラウザはiframeに対応していません。
+					</p>
+				</iframe>
+				<h2>サイト内リンク</h2>
+				<ul>
+					<li>
+						<p><a href="article">記事</a></p>
+					</li>
+					<li>
+						<p><a href="webapp">JSアプリの開発(試験的)</a></p>
+					</li>
+					<li>
+						<p><a href="writer">ライター</a></p>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<footer>
 			<h1>フッタ</h1>
