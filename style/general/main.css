@@ -9,8 +9,8 @@ header {
   background-color: lightgray;
 }
 div.body {
-  padding-left: 2%;
-  padding-right: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 h1, h2, h3, h4, h5, h6 {
   width: fit-content;
@@ -42,6 +42,29 @@ ol.breadcrumb {
   display: inline;
 }
 /* パンくずリストここまで */
+/* サイドバー右 */
+div.right-bar {
+  width: fit-content;
+  height: fit-content;
+  margin: 3%;
+  padding: 2%;
+}
+iframe#news {
+  width: fit-content;
+  max-width: 100%;
+  min-width: 98%;
+  height: fit-content;
+  max-height: 350px;
+  min-height: 350px;
+  margin: 1%;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  white-space: nowrap;
+  border-style: groove;
+  border-color: lightgray;
+}
+/* サイドバー右ここまで */
 /* ライターページ */
 table {
   border-collapse: collapse;

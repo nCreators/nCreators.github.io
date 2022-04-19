@@ -5,9 +5,10 @@ function syncDelay(milliseconds){
         end = new Date().getTime();
     }
 }
-while (true) {
+//while (true) 
+function test() {
     const news = document.getElementById("news");
     news.style.width = news.contentWindow.document.body.scrollWidth + "px";
     news.style.height = news.contentWindow.document.body.scrollHeight + "px";
-    syncDelay(10000);
+    //syncDelay(10000000);
 }
