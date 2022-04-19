@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Ping to Google
         run: |
-          curl -X GET "http://www.google.com/ping?sitemap=https://fwywd.com/sitemap.xml"
+          curl -X GET "http://www.google.com/ping?sitemap=https://ncreators.github.io/sitemap.xml"
