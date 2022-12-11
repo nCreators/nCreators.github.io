@@ -1,0 +1,44 @@
+/* 基礎要素 */
+body {
+  margin: 0px;
+}
+header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: lightgray;
+}
+div.body {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+h1, h2, h3, h4, h5, h6 {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: cornflowerblue;
+  font-size: 1.5rem;
+  margin-left: 8px;
+}
+p {
+  margin: 5px;
+  font-size: 110%;
+  line-height: 135%;
+}
+a {
+  width: fit-content;
+  height: fit-content;
+}
+/* 基礎要素ここまで */
+/* パンくずリスト */
+ol.breadcrumb {
+  padding-left: 2%;
+  margin: 0px;
+}
+.breadcrumb li {
+  list-style-type: none;
+  display: inline;
+}
+/* パンくずリストここまで */

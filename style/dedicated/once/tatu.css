@@ -1,0 +1,9 @@
+.icon {
+    border-radius: 50%;
+    border-style: outset;
+    border-color: lightgray;
+    height: 120px;
+    width: 120px;
+    padding: 5px;
+    margin-left: 10px;
+}

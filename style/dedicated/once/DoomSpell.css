@@ -1,0 +1,32 @@
+p.destroy {
+    line-height: 30px;
+}
+code.doom-spell {
+    font-family: Wingdings;
+    font-size:80%;
+    width: 288px;
+    height: 27px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 6px;
+}
+img.way-to-copy {
+    width: 288px;
+    height: 27px;
+    margin: 5px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+}
+div.midium-space {
+    height: 500px;
+}
+p.fiction {
+    font-size: 100%;
+}
+p.responsible-yourself {
+    font-size: 500%;
+}

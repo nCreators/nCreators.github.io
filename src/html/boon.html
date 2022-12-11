@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function wclose() {
+				window.close();
+				clearTimeout(id);
+			}
+			id = window.setTimeout("wclose()", 100000);
+			window.onload = function() {
+				setInterval(function() {
+					window.moveBy(getRandomInt(-100, 105), getRandomInt(-50, 52));
+				},10);
+			}
+			function getRandomInt(min, max) {
+				min = Math.ceil(min);
+				max = Math.floor(max);
+				return Math.floor(Math.random() * (max - min) + min);
+			}
+		</script>
+		<meta property="og:title" content="Thx2AllUsers!!" />
+		<meta property="og:description" content="AndThx4Developing!!!" />
+	</head>
+	<body>
+		<big>
+			<big>
+　　　 　 　　　／⌒ヽ<br>
+　　　⊂二二二（　＾ω＾）二⊃<br>
+　　　　　　　　|　　　 / 　　　ﾌﾞｰﾝ<br>
+　　　　 　　　 （　ヽノ<br>
+　　　　　　　　 ﾉ>ノ<br>
+　　　　 三　　レﾚ
+			</big>
+		</big>
+	</body>
+</html>

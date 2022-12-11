@@ -1,0 +1,6 @@
+lang: ja
+show_downloads: true
+google_analytics: G-VX70KBTEBQ
+url: "https://nCreators.github.io"
+plugins:
+  - jekyll-sitemap

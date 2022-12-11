@@ -1,0 +1,19 @@
+img.usericon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 18%;
+  left: -0.1%;
+}
+ul.biglist li p span {
+  position: absolute;
+  left: 70px;
+}
+ul.biglist > li {
+  height: 70px;
+  position: relative;
+  z-index: 0;
+  font-size: 30px;
+  white-space: nowrap;
+}

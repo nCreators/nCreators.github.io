@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/article#">
+	<head>
+		<meta charset="utf-8" />
+		<!-- OGP -->
+		<meta name="robots" content="max-image-preview:large" />
+		<meta property="og:url" content="https://nCreators.github.io/devapp/pixel-world.html" />
+		<meta property="og:type" content="article" />
+		<!-- titleの指定は任意 -->
+		<meta property="og:title" content="ピクセルシャーレ｜nCreateの有志者で作り上げるウェブサイト" />
+		<meta property="og:site_name" content="nCreators.github.io" />
+		<meta property="og:image" content="埋め込み画像のパス(URL)" />
+		<meta property="og:description" content="ゲーム/ピクセルシャーレ from nC2" />
+		<!-- End OGP -->
+		<link rel="icon" type="image/png" href="/img/favicon.png" />
+		<!--
+			End Common Settings
+		-->
+		<link rel="stylesheet" href="../style/general/game.css" />
+		<title>ピクセルシャーレ｜nCreateの有志者で作り上げるウェブサイト</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0" />
+	</head>
+	<body>
+		<header>
+			<ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a itemprop="item" href="/"><span itemprop="name">ホーム</span></a>
+					<meta itemprop="position" content="1" />
+					>
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<a itemprop="item" href="/appdev.html"><span itemprop="name">アプリ開発</span></a>
+					<meta itemprop="position" content="2" />
+					>
+				</li>
+				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+					<span itemprop="name">ピクセルシャーレ</span>
+					<meta itemprop="position" content="3" />
+				</li>
+			</ol>
+		</header>
+		<div class="body">
+			<p>
+				<h1>ピクセル・シャーレ</h1>
+			</p>
+		
+			<canvas id="GameCanvas" width="640" height="640" style="border:4px solid; background-color:whitesmoke"></canvas>
+			
+			<script>
+				var canvas = document.getElementById("GameCanvas");
+				var ctx = canvas.getContext("2d");
+			</script>
+			<script src='../src/javascript/pixel-schale.js'></script>
+		<!--End First Script-->
+			<table border="1" style="position:absolute; top:100px; left:700px; border-collapse:collapse;">
+				<tr>
+					<td id="pxtext" colspan="4">ピクセル選択</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="picell" onclick="setpixel(1)"></td>
+					<td><input type="button" value="meal  " onclick="setpixel(2)"></td>
+					<td><input type="button" value="water " onclick="setpixel(3)"></td>
+					<td><input type="button" value="poison" onclick="setpixel(4)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="------" onclick="setpixel(0)"></td>
+					<td><input type="button" value="------" onclick="setpixel(0)"></td>
+					<td><input type="button" value="------" onclick="setpixel(0)"></td>
+					<td><input type="button" value="delete" onclick="setpixel(0)"></td>
+				</tr>
+			</table>
+			<table border="1" style="position:absolute; top:200px; left:700px; border-collapse:collapse;">
+				<tr>
+					<td id="simtext" colspan="4">シミュレーション</td>
+				</tr>
+				<tr>
+					<td><input type="button" value="再生"　　 onclick="playsim()"></td>
+					<td><input type="button" value="1F再生" onclick="cyclesim()"></td>
+					<td><input type="button" value="停止"　　 onclick="stopsim()"></td>
+					<td><input type="button" value="中止"　　 onclick="resetsim()"></td>
+				</tr>
+			</table>
+<!--		<div id="simtext" style="position:absolute; top:240px; left"></div>-->
+			<!--Game UI Settings-->
+			<script>
+				var simT = document.getElementById("simtext")
+				var pxT  = document.getElementById("pxtext")
+			</script>
+			<!--End Second Script-->
+			<p>
+				<h2>This is version alpha.</h2>
+				描画が追いついていないのはjavascriptのmousemoveの仕様です。誰か解決法おすえてぇ。
+			</p>
+		</div>
+		<footer>
+		</footer>
+	</body>
+</html>
