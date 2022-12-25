@@ -5,10 +5,10 @@ function syncDelay(milliseconds){
         end = new Date().getTime();
     }
 }
-while (true) {
+function LoadedIframe() {
     const news = document.getElementById("news");
     news.style.width = news.contentWindow.document.body.scrollWidth + "px";
     news.style.height = news.contentWindow.document.body.scrollHeight + "px";
-    syncDelay(5000);
-    console.log("has finished \r\n");
+    // syncDelay(5000);
+    console.log("iframe has resized");
 }
