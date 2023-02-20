@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="nCMD.css" type="text/css">
+        <script src="nCMD.js"></script>
+        <title>
+            nCrateMarkDownEditer(仮)
+        </title>
+    </head>
+    <body>
+        <textarea id="mainarea" name="mainarea" cols="75" rows="20" placeholder="nCMDをここに書いてね" wrap="hard">This is [#1:nCreateMarkDown(仮)]
+[#2,U:by nC2]
+
+[#3,B:nCreateMarkDownとは？]
+[U:nC2が制作した独自のMarkDown風マークアップ言語です。[I:略してnCMD]
+生成ボタンを押すことでHTMLへの変換ができます。]
+HTMLより簡易的な構造かつ、MarkDownよりも幅広い表現が可能になっており、HTMLの記述を覚えずとも簡単にHTML文章を作ることができます。
+[#3,B:内部構造上の注意点]
+本プログラムは一部分に[B,U:非常によろしくないと思われる手法]が取られています[S:誰だよこんなコード書いたやつ！！出てこい！！]
+(例：CSSで架空のHTMLタグを指定して装飾するようにして擬似的な独自のHTMLタグとして扱うなど、極めつけには例外処理を全く入れてません。)
+[S:そのためちゃんとコードを規則正しく書いてる人にこれ見せたらおそらく失神します]
+また、サロゲートペア文字(非一般的な漢字や絵文字など)は[#3,B:絶対に使わないでください！！！]
+訳の分からないバグり方をします。(そのうち修正したいです。)</textarea><br>
+        <input type="button" value="生成" onclick="convert()"><input type="button" value="リセット" onclick="clearmainarea()"><br>
+        <textarea id="previewtext" name="previewtext" cols="75" rows="20" readonly>hoge</textarea>
+    </body>
+</html>
