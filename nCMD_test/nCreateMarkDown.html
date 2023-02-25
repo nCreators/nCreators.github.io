@@ -21,7 +21,7 @@ HTMLより簡易的な構造かつ、MarkDownよりも幅広い表現が可能�
 [S:そのためちゃんとコードを規則正しく書いてる人にこれ見せたらおそらく失神します]
 また、サロゲートペア文字(非一般的な漢字や絵文字など)は[#3,B:絶対に使わないでください！！！]
 訳の分からないバグり方をします。(そのうち修正したいです。)</textarea><br>
-        <input type="button" value="生成" onclick="convert()"><input type="button" value="リセット" onclick="clearmainarea()"><br>
+        <input type="button" value="生成" onclick="convert()"><input type="button" value="コピー" onclick="navigator.clipboard.writeText(document.getElementById('previewtext').value)"><input type="button" value="リセット" onclick="clearmainarea()"><br>
         <textarea id="previewtext" name="previewtext" cols="75" rows="20" readonly>hoge</textarea>
     </body>
 </html>
