@@ -3,12 +3,11 @@
     <head>
         <link rel="stylesheet" href="nCMD.css" type="text/css">
         <script src="nCMD.js"></script>
-        <title>
-            nCrateMarkDownEditer(仮)
-        </title>
+        <title>nCrateMarkDownEditer(仮)</title>
     </head>
     <body>
-        <textarea id="mainarea" name="mainarea" cols="75" rows="20" placeholder="nCMDをここに書いてね" wrap="hard">This is [#1:nCreateMarkDown(仮)]
+        
+        <textarea id="mainarea" name="mainarea" rows="20" placeholder="nCMDをここに書いてね">This is [#1:nCreateMarkDown(仮)]
 [#2,U:by nC2]
 
 [#3,B:nCreateMarkDownとは？]
@@ -20,12 +19,12 @@ HTMLより簡易的な構造かつ、MarkDownよりも幅広い表現が可能�
 (例：CSSで架空のHTMLタグを指定して装飾するようにして擬似的な独自のHTMLタグとして扱うなど、極めつけには例外処理を全く入れてません。)
 [S:そのためちゃんとコードを規則正しく書いてる人にこれ見せたらおそらく失神します]
 また、サロゲートペア文字(非一般的な漢字や絵文字など)は[#3,B:絶対に使わないでください！！！]
-訳の分からないバグり方をします。(そのうち修正したいです。)</textarea><br>
+訳の分からないバグり方をします。(そのうち修正したいです。)</textarea>
         <ul>
-            <li><p onclick="convert()">生成</p></li>
-            <li><p onclick="navigator.clipboard.writeText(document.getElementById('previewtext').value)">コピー</p></li>
+            <li><p onclick="convert()">変換</p></li>
+            <li><p onclick="copy()">コピー</p></li>
             <li><p onclick="clearmainarea()">クリア</p></li>
         </ul>
-        <textarea id="previewtext" name="previewtext" cols="75" rows="20" readonly>hoge</textarea>
+        <textarea id="previewtext" name="previewtext" rows="10">hoge</textarea>
     </body>
 </html>

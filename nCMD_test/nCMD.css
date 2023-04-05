@@ -1,6 +1,7 @@
 textarea {
     width: 100%;
     resize: vertical;
+    font-size: 18px;
 }
 ul {
     display: flex;
@@ -8,13 +9,19 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 li {
     background-color: lightgray;
-    border-radius: 30%;
+    border-radius: 0;
     border-color: lightslategray;
     border-bottom-style: solid;
     border-width: 3px;
+    width: 33%;
+    cursor: pointer;
+}
+li:hover {
+    background-color: rgb(188, 245, 188);
 }
 li:active {
     background-color: slategray;
@@ -22,5 +29,21 @@ li:active {
 ul > li > p {
     text-align: center;
     font-family: sans-serif;
-    width: 100%;
+    vertical-align: middle;
+    margin: 10px auto;
+}
+@media (min-width:767px) {
+    ul {
+        justify-content: flex-start;
+    }
+    li {
+        width: 100px;
+        height: fit-content;
+    }
+    ul > li > p {
+        font-size: 17px;
+    }
+    textarea {
+        font-size: 16px;
+    }
 }
